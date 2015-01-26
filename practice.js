@@ -158,11 +158,11 @@ var user = {
 that each value is truthy. If it's not truthy, remove it from the object. */
 
   //**NEED HELP HERE**
-  for (truthValues in user) {
-    if(user[truthValues]) {
+  for (key in user) {
+    if(user[key]) {
     console.log("truthy");
     } else {
-    delete falsey.user;
+    delete user[key];
     }
 }
 
